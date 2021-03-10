@@ -1,9 +1,19 @@
 .navigation {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+
   .menu {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    margin: 0;
+    padding: 0;
     list-style: none;
   }
 
   .menu-item {
-    display: inline-block;
+    
   }
 }
