@@ -47,6 +47,32 @@
 
       <h2 class="subtitle">Landing Page</h2>
 
+      <section class="newsletter hidden" title="Newsletter">
+        <button class="close-newsletter">&times;</button>
+        <h3 class="section-title">Newsletter</h3>
+        <form class="newsletter-form" method="post">
+          <fieldset class="form-wrapper">
+            <legend class="form-title">Want to hear more from us?</legend>
+            <div class="email-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Insert email"
+              />
+            </div>
+            <button
+              type="submit"
+              title="Submit Email for Newsletter"
+              class="btn"
+            >
+              Sign up!
+            </button>
+          </fieldset>
+        </form>
+      </section>
+      <div class="overlay hidden"></div>
+
       <section class="recipes layout-section" title="Recipes">
         <h3 class="section-title">Recipes</h3>
 
@@ -193,34 +219,10 @@
         </div>
       </section>
 
-      <section class="newsletter layout-section" title="Newsletter">
-        <h3 class="section-title">Newsletter</h3>
-        <form class="newsletter-form" method="post">
-          <fieldset class="form-wrapper">
-            <legend class="form-title">Want to hear more from us?</legend>
-            <div class="email-wrapper">
-              <!-- <label for="email">Insert email</label> -->
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Insert email"
-              />
-            </div>
-            <button
-              type="submit"
-              title="Submit Email for Newsletter"
-              class="btn"
-            >
-              Sign up!
-            </button>
-          </fieldset>
-        </form>
-      </section>
-
       <div class="modal"></div>
     </main>
 
     <footer class="layout-footer"></footer>
+    <script src="js/newsletter.js"></script>
   </body>
 </html>
