@@ -3,7 +3,7 @@
 
 # Node / Grunt
 node_modules
-js
+# js
 css
 
 # System files
