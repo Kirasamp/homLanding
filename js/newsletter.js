@@ -5,6 +5,7 @@ const emailInput = document.getElementById("email");
 const emailForm = document.querySelector(".newsletter-form");
 const btnClosePopup = document.querySelector(".close-newsletter");
 const btnSignup = document.querySelector(".sign-up");
+const body = document.body;
 
 const emailList = [];
 
@@ -12,6 +13,7 @@ const emailList = [];
 const closePopup = function () {
   popup.classList.add("hidden");
   overlay.classList.add("hidden");
+  body.classList.remove('overlay-active');
 };
 
 overlay.addEventListener("click", closePopup);

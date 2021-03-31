@@ -1,6 +1,10 @@
 body {
   margin: 0;
   background-color: $white;
+
+  &.overlay-active {
+    overflow: hidden;
+  }
 }
 
 h1, h2, h3,

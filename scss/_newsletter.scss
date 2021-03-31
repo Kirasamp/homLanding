@@ -6,8 +6,9 @@
 
   font-family: "Poppins", sans-serif;
   color: #444;
-  background-image: url("img/newsletter.jpg");
-
+  background-image: url("../img/newsletter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   background-color: #f3f3f3;
   padding: 2rem;
   border-radius: 5px;
