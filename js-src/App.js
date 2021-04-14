@@ -6,6 +6,8 @@ const App = (() => {
     // const imageContainer = document.querySelectorAll('.image-container');
     // const carouselSlider = document.querySelector('.carousel-slider');
     const newsletter = document.querySelector('.newsletter');
+    const overlay = document.querySelector('.overlay');
+    const nav = document.querySelector('.navigation');
 
     // if(header) {
     //   HeaderHandler(header, document.body);
@@ -17,8 +19,8 @@ const App = (() => {
     //   }
     // }
 
-    if(newsletter) {
-      NewsletterHandler(newsletter);
+    if(newsletter && overlay) {
+      NewsletterHandler(newsletter, overlay);
     }
 
     // if(carouselSlider) {

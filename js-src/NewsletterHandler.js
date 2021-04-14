@@ -1,20 +1,18 @@
-const NewsletterHandler = (parent) => {
+const NewsletterHandler = (newsletter, overlay) => {
   const init = () => {
     // Element Selection
-    const overlay = parent.querySelector(".overlay");
-    const popup = parent.querySelector(".newsletter");
-    const title = parent.querySelector(".popup-title");
-    const emailInput = parent.getElementById("email");
-    const emailForm = parent.querySelector(".newsletter-form");
-    const btnClosePopup = parent.querySelector(".close-newsletter");
-    const btnSignup = parent.querySelector(".sign-up");
-    const body = parent.body;
+    const title = newsletter.querySelector(".popup-title");
+    const emailInput = newsletter.querySelector("#email");
+    const emailForm = newsletter.querySelector(".newsletter-form");
+    const btnClosePopup = newsletter.querySelector(".close-newsletter");
+    const btnSignup = newsletter.querySelector(".sign-up");
+    const body = newsletter.body;
 
     const emailList = [];
 
     // Close Popup
     const closePopup = function () {
-      popup.classList.add("hidden");
+      newsletter.classList.add("hidden");
       overlay.classList.add("hidden");
       body.classList.remove("overlay-active");
     };
@@ -23,7 +21,7 @@ const NewsletterHandler = (parent) => {
 
     btnClosePopup.addEventListener("click", closePopup);
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && !popup.classList.contains("hidden")) {
+      if (e.key === "Escape" && !newsletter.classList.contains("hidden")) {
         closePopup();
       }
     });
