@@ -1,6 +1,6 @@
 const NewsletterHandler = (parent) => {
   const init = () => {
-    // Element Selection
+    /*     // Element Selection
     const overlay = parent.querySelector(".overlay");
     const popup = parent.querySelector(".newsletter");
     const title = parent.querySelector(".popup-title");
@@ -35,19 +35,18 @@ const NewsletterHandler = (parent) => {
       emailList.push(emailInput.value);
       emailForm.classList.add("hidden");
       title.textContent = "Thank you for signing up!";
-    });
+    }); */
   };
 
   init();
 };
-;const App = (() => {
-
+const App = (() => {
   const init = () => {
     const body = document.body;
     // const header = document.querySelector('.layout-header');
     // const imageContainer = document.querySelectorAll('.image-container');
     // const carouselSlider = document.querySelector('.carousel-slider');
-    const newsletter = document.querySelector('.newsletter');
+    const newsletter = document.querySelector(".newsletter");
 
     // if(header) {
     //   HeaderHandler(header, document.body);
@@ -59,7 +58,7 @@ const NewsletterHandler = (parent) => {
     //   }
     // }
 
-    if(newsletter) {
+    if (newsletter) {
       NewsletterHandler(newsletter);
     }
 

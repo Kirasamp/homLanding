@@ -1,12 +1,11 @@
 .newsletter {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   font-family: "Poppins", sans-serif;
   color: #444;
-  background-image: url("../img/newsletter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #f3f3f3;
@@ -14,6 +13,14 @@
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+.img--newsletter {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 .btn {

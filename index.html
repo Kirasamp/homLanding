@@ -35,7 +35,7 @@
             <a href="#shop" class="menu-link">Shop</a>
           </li>
 
-          <li class="menu-item">
+          <li class="menu-item menu-newsletter">
             <a href="#newsletter" class="menu-link">Newsletter</a>
           </li>
         </ul>
@@ -47,12 +47,18 @@
 
       <h2 class="subtitle">Landing Page</h2>
 
-      <section class="newsletter" title="Newsletter">
+      <section class="newsletter hidden" title="Newsletter">
         <button class="close-newsletter">&times;</button>
-        <h3 class="section-title popup-title">Newsletter</h3>
+        <img
+          src="img/newsletter.jpg"
+          class="img--newsletter"
+          alt="Newsletter sign-up"
+        />
+
+        <!-- <h3 class="section-title popup-title">Newsletter</h3> -->
         <form class="newsletter-form" method="post">
           <fieldset class="form-wrapper">
-            <legend class="form-title">Want to hear more from us?</legend>
+            <!-- <legend class="form-title">Want to hear more from us?</legend> -->
             <div class="email-wrapper">
               <input
                 type="email"
@@ -71,7 +77,7 @@
           </fieldset>
         </form>
       </section>
-      <div class="overlay"></div>
+      <div class="overlay hidden"></div>
 
       <section class="recipes layout-section" title="Recipes">
         <h3 class="section-title">Recipes</h3>
@@ -225,5 +231,7 @@
     <footer class="layout-footer"></footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/navigation.js"></script>
   </body>
 </html>

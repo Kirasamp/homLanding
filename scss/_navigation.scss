@@ -16,6 +16,15 @@
   .menu-item {
   }
 
+  .menu-link:link,
+  .menu.link:visited {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
   .logo {
     height: 100%;
   }
